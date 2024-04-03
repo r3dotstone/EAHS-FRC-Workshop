@@ -1,0 +1,4 @@
+var searchData=
+[
+  ['risingedgecounter_18',['RisingEdgeCounter',['../class_rising_edge_counter.html',1,'']]]
+];

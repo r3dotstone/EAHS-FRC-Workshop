@@ -1,0 +1,89 @@
+\hypertarget{class_f_s_m_encoder1}{}\doxysection{F\+S\+M\+Encoder1 Class Reference}
+\label{class_f_s_m_encoder1}\index{FSMEncoder1@{FSMEncoder1}}
+
+
+This class impliments a quadrature based encoder attached to the Motor1 connector.  
+
+
+
+
+{\ttfamily \#include $<$M\+E480\+F\+S\+M.\+h$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_f_s_m_encoder1_ac3f94eb16180af98e62f0c30285edc66}{F\+S\+M\+Encoder1}} ()
+\begin{DoxyCompactList}\small\item\em This is the constructor for the class. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_f_s_m_encoder1_aa9c0e4fc568a6dbce8f05962ccf5bfe9}{$\sim$\+F\+S\+M\+Encoder1}} (void)
+\begin{DoxyCompactList}\small\item\em This is the destructor for the class. \end{DoxyCompactList}\item 
+long \mbox{\hyperlink{class_f_s_m_encoder1_a9bfd87445960d00cc7dddfe485ab84e8}{get\+Counts}} ()
+\begin{DoxyCompactList}\small\item\em Returns the counts from the encoder plugged into Motor 1 without resetting the counts to 0. \end{DoxyCompactList}\item 
+long \mbox{\hyperlink{class_f_s_m_encoder1_a459a54681929821e5eeb59755a204533}{get\+Counts\+And\+Reset}} ()
+\begin{DoxyCompactList}\small\item\em Returns the counts from the encoder plugged into Motor 1 and then resets the count to 0. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+This class impliments a quadrature based encoder attached to the Motor1 connector. 
+
+The \mbox{\hyperlink{class_f_s_m_encoder1}{F\+S\+M\+Encoder1}} class supports a quadrature based encoder attached to the Motor1 connector. The number of counts can be accessed through the get\+Counts and get\+Counts\+And\+Reset functions. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_f_s_m_encoder1_ac3f94eb16180af98e62f0c30285edc66}\label{class_f_s_m_encoder1_ac3f94eb16180af98e62f0c30285edc66}} 
+\index{FSMEncoder1@{FSMEncoder1}!FSMEncoder1@{FSMEncoder1}}
+\index{FSMEncoder1@{FSMEncoder1}!FSMEncoder1@{FSMEncoder1}}
+\doxysubsubsection{\texorpdfstring{FSMEncoder1()}{FSMEncoder1()}}
+{\footnotesize\ttfamily F\+S\+M\+Encoder1\+::\+F\+S\+M\+Encoder1 (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+This is the constructor for the class. 
+
+It will initialize the internal variables. This is called automatically when you declare the object and will not have to be call in your program. \mbox{\Hypertarget{class_f_s_m_encoder1_aa9c0e4fc568a6dbce8f05962ccf5bfe9}\label{class_f_s_m_encoder1_aa9c0e4fc568a6dbce8f05962ccf5bfe9}} 
+\index{FSMEncoder1@{FSMEncoder1}!````~FSMEncoder1@{$\sim$FSMEncoder1}}
+\index{````~FSMEncoder1@{$\sim$FSMEncoder1}!FSMEncoder1@{FSMEncoder1}}
+\doxysubsubsection{\texorpdfstring{$\sim$FSMEncoder1()}{~FSMEncoder1()}}
+{\footnotesize\ttfamily F\+S\+M\+Encoder1\+::$\sim$\+F\+S\+M\+Encoder1 (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+This is the destructor for the class. 
+
+detaches the interrupts 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_f_s_m_encoder1_a9bfd87445960d00cc7dddfe485ab84e8}\label{class_f_s_m_encoder1_a9bfd87445960d00cc7dddfe485ab84e8}} 
+\index{FSMEncoder1@{FSMEncoder1}!getCounts@{getCounts}}
+\index{getCounts@{getCounts}!FSMEncoder1@{FSMEncoder1}}
+\doxysubsubsection{\texorpdfstring{getCounts()}{getCounts()}}
+{\footnotesize\ttfamily long F\+S\+M\+Encoder1\+::get\+Counts (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Returns the counts from the encoder plugged into Motor 1 without resetting the counts to 0. 
+
+The count value is stored as a long integer. Therefore it overflow when the counter reaches +-\/2,147,483,647 counts.
+
+\begin{DoxyReturn}{Returns}
+The number of encoder counts 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_f_s_m_encoder1_a459a54681929821e5eeb59755a204533}\label{class_f_s_m_encoder1_a459a54681929821e5eeb59755a204533}} 
+\index{FSMEncoder1@{FSMEncoder1}!getCountsAndReset@{getCountsAndReset}}
+\index{getCountsAndReset@{getCountsAndReset}!FSMEncoder1@{FSMEncoder1}}
+\doxysubsubsection{\texorpdfstring{getCountsAndReset()}{getCountsAndReset()}}
+{\footnotesize\ttfamily long F\+S\+M\+Encoder1\+::get\+Counts\+And\+Reset (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Returns the counts from the encoder plugged into Motor 1 and then resets the count to 0. 
+
+The count value is stored as a long integer. Therefore it overflow when the counter reaches +-\/2,147,483,647 counts.
+
+\begin{DoxyReturn}{Returns}
+The number of encoder counts 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+src/\mbox{\hyperlink{_m_e480_f_s_m_8h}{M\+E480\+F\+S\+M.\+h}}\item 
+src/\mbox{\hyperlink{_m_e480_f_s_m_8cpp}{M\+E480\+F\+S\+M.\+cpp}}\end{DoxyCompactItemize}
